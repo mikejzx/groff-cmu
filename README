@@ -1,9 +1,9 @@
 groff-cmu
 =========
 
-This repository contains files for the Computer Modern Serif font for groff,
-and allows for generating PDFs with this font. It might work with PostScript
-too, I haven't tested though.
+This repository contains files for the Computer Modern Serif Unicode font for
+groff, and allows for generating PDFs with this font. It might work with
+PostScript too, I haven't tested though.
 
 Quick usage (tested with 'ms' macros):
 * Clone this repo
