@@ -1,0 +1,21 @@
+groff-cmu
+=========
+
+This repository contains files for the Computer Modern Serif font for groff,
+and allows for generating PDFs with this font. It might work with PostScript
+too, I haven't tested though.
+
+Quick usage (tested with 'ms' macros):
+* Clone this repo
+
+* Add the line `.ds FAM CMUSerif` before the text you want in this font in your
+  document.
+
+* Compile the groff document and output to a PDF, after specifying the font
+  path, like so:
+  GROFF_FONT_PATH="/path/to/cloned/repo" groff -k file.ms -ms -Tpdf > out.pdf
+
+Notes:
+This only contains the *Serif* font family for now (incl. Roman, Bold, Italic,
+and BoldItalic) as it's the only family I cared about adding. I will happily
+accept any PRs which add the other font families!
